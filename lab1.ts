@@ -1,0 +1,4 @@
+interface Collection {
+    request(): void
+}
+
