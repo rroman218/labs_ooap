@@ -5,5 +5,14 @@ class AudioTrack {
         title: string,
         artist: string,
         duration: number
-    ) {}
+    ) { }
 }
+
+// Interface for calling functions
+interface AudioCollection {
+    addTrack(): void;
+    removeTrack(): void;
+    findTrack(): void;
+    getAllTrack(): void;
+}
+
