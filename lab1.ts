@@ -3,8 +3,11 @@ class AudioTrack {
     constructor(
         public title: string,
         public artist: string,
-        public duration: number
+        public duration: string
     ) { }
+    public showInfo(): void {
+        console.log(`Title: ${this.title}, Artist: ${this.artist}, Duration: ${this.duration}`);
+    }
 }
 
 // Interface for calling functions
@@ -56,3 +59,10 @@ class RealAudioCollection implements AudioCollection {
     }
 }
 
+// ========= Client code =========
+console.log(`===== Created Collection =====`);
+
+// Created audio tracks
+const audio1 = new AudioTrack("Believer", "Imagine Dragons", "2:04")
+const audio2 = new AudioTrack("Numb", "Linkin Park", "3:05");
+const audio3 = new AudioTrack("Faded", "Alan Walker", "3:32");
