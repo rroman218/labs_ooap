@@ -29,3 +29,20 @@ class GoldFactory implements JewelryFactory {
     }
 }
 
+class SilverFactory implements JewelryFactory {
+    public createEarrings(weight: number, complexity: number): Jewelry {
+        return new SilverEarrings(weight, complexity)
+    }
+    public createRing(weight: number, complexity: number): Jewelry {
+        return new SilverRing(weight, complexity)
+    }
+    public createPendant(weight: number, complexity: number): Jewelry {
+        return new SilverPendant(weight, complexity)
+    }
+    public createChain(weight: number, complexity: number): Jewelry {
+        return new SilverChain(weight, complexity)
+    }
+    public createBracelet(weight: number, complexity: number): Jewelry {
+        return new SilverBracelet(weight, complexity)
+    }
+}
